@@ -11,7 +11,9 @@
 
 ## Setup
 
-This code was tested with Python 3.8, [Pytorch](https://pytorch.org/) 1.11 using pre-trained models through [huggingface / diffusers](https://github.com/huggingface/diffusers#readme).
+*diffusers version matters: now 0.13.1 works with modifications to requirement and ptp_utils.py*
+
+This code was tested with Python 3.8 (3.9 works also), [Pytorch](https://pytorch.org/) 1.11 (1.13.1 works as well) using pre-trained models through [huggingface / diffusers](https://github.com/huggingface/diffusers#readme).
 Specifically, we implemented our method over  [Latent Diffusion](https://huggingface.co/CompVis/ldm-text2im-large-256) and  [Stable Diffusion](https://huggingface.co/CompVis/stable-diffusion-v1-4).
 Additional required packages are listed in the requirements file.
 The code was tested on a Tesla V100 16GB but should work on other cards with at least **12GB** VRAM.
